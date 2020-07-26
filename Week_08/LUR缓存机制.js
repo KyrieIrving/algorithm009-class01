@@ -9,11 +9,11 @@ class Node {
 }
 // 双向链表
 class DoubleList {
-    constructor(key,val) {
-        this.head = new Node(key, val); // 初始化头节点
-        this.tail = new Node(key, val); // 初始化尾结点
-        this.size = 0; // 初始化链表的容积
-        this.head.next =this.tail;
+    constructor() {
+        this.head = new Node(0, 0);
+        this.tail = new Node(0, 0);
+        this.size = 0;
+        this.head.next = this.tail;
         this.tail.prev = this.head;
     }
     // 在链表头部添加
